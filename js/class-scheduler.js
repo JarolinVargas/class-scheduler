@@ -97,7 +97,7 @@ class classScheduler {
             if( !schedulesOverlap.includes(false) ) {
                 return true;
             } else {
-                this.toggleNotification(true, 'This schedule conflicts with one more selected schedules');
+                this.toggleNotification(true, 'This schedule conflicts with one or more selected schedules');
                 return false;
             }
         } else {

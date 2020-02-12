@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: #F7F7F9;
+    font-family: 'Poppins', Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    font-family: 'Poppins';
+}

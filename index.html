@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class Scheduler</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/components.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="class-scheduler" data-notification>
+            <form class="cs-input" action="#" method="POST">
+                <!-- heading -->
+                <div class="columns col-1">
+                    <div class="col">
+                        <div class="heading">
+                            <h1 class="title color-primary">Class Scheduler</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- name, date of birth -->
+                <div class="columns col-2 margin-bottom">
+                    <div class="col">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <div>
+                                <i class="fas fa-user"></i>
+                                <input type="text" data-item="Full Name" name="full_name" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <div>
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" data-item="Date of Birth" name="date_of_birth" required/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- email address -->
+                <div class="columns col-1 margin-bottom">
+                    <div class="col">
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <div>
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" data-item="Email Address" name="email_address" required/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- area of study, schedule -->
+                <div class="columns col-2 margin-bottom">
+                    <div class="col">
+                        <div class="options-list" data-parent-options="areasOfStudy">
+                            <label>Area of Study</label>
+                            <ul class="custom-scrollbar">
+                                <!-- list items appended in class-scheduler.js -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="options-list" data-child-options="areasOfStudy">
+                            <label>Schedule</label>
+                            <ul class="custom-scrollbar" data-empty-list-msg="select an area of study"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- selected schedules -->
+                <div class="columns col-1">
+                    <div class="col">
+                        <div class="selections" data-selected-options="areasOfStudy">
+                            <label>Selected Classes</label>
+                            <ul>
+                                <!-- list items appended in class-scheduler.js -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <!-- show output button -->
+                <div class="columns col-1 text-align-right uppercase">
+                    <div class="col">
+                        <span class="button btn-style-1 show-output-btn">Review<i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </form>
+            <!-- output -->
+            <div class="cs-output">
+                <div class="cs-output-content custom-scrollbar">
+                    <div class="columns col-1">
+                        <div class="col">
+                            <ul class="label-and-value-list" data-editable>
+                                <!-- list items appended in class-scheduler.js -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-output-footer">
+                    <span class="button btn-style-2" data-submit-btn>Confirm and Submit</span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/class-scheduler.js"></script>
+    </body>
+</html>
